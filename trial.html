@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="trail.css">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="loader">
+
+    <div class="cssloader">
+        <div class="sh1"></div>
+        <div class="sh2"></div>
+        <h4 class="lt">loading</h4>
+    </div>
+</div>    
+   
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+    <script>
+        AOS.init();
+       
+        const loader = document.querySelector('.loader')
+
+        window.setTimeout(() => {
+            loader.classList.add('vanish')
+        }, 3000);
+         
+    </script>
+</body>
+
+</html>
